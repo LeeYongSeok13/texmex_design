@@ -13,6 +13,14 @@ header .container {
     justify-content: space-between;
 }
 
+h1 {
+    height: 100px;
+}
+
+h1 img{
+    width: 100px;
+}
+
 .Gnb ul{
     display: flex;
 }
