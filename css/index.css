@@ -1,5 +1,9 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
-  display: flex;
   width: 100%;
   max-width: 1200px;
   justify-content: center;
@@ -8,28 +12,61 @@
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #fff;
   padding: 10px 0;
 }
 
-.logo {
-  height: 100px;
+.navbar .container {
+  display: flex;
+  flex-direction: space-between;
 }
 
-.logo img {
-  width: 100px;
+.logo {
+  height: 10vh;
+}
+
+.logo a img {
+  width: 18%;
 }
 
 .navbar ul {
   display: flex;
+  font-size: 21px;
+  gap: 5em;
 }
 
 .navbar ul li {
-  padding: 0 20px;
+  position: relative;
 }
 
-.section01 {
+.navbar ul li::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #144c25;
+  transition: 1s;
+}
+
+.navbar ul li:hover::after {
   width: 100%;
+}
+
+#Main_Slide {
   height: 600px;
   background: grey;
+}
+
+#Product {
+  height: 600px;
+  background-color: skyblue;
+}
+
+#Chart {
+  height: 600px;
+  background-color: azure;
 }
